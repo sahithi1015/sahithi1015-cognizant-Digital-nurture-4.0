@@ -1,0 +1,132 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Typography */
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background: url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+/* Header styles */
+#mainHeader {
+  background: linear-gradient(to right, #007BFF, #00C6FF);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Navigation Menu */
+.navMenu {
+  list-style-type: none;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+}
+
+.navMenu li {
+  margin: 10px;
+}
+
+.navMenu a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+/* Link States */
+a:link {
+  color: white;
+}
+a:visited {
+  color: lightgray;
+}
+a:hover {
+  background-color: #555;
+}
+a:active {
+  background-color: #222;
+}
+
+/* Event Card Styles */
+.eventCard {
+  background-color: #ffffff;
+  margin: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Multi-column News Section */
+.newsColumn {
+  column-count: 2;
+  column-gap: 30px;
+  column-rule: 1px solid gray;
+  padding: 20px;
+}
+
+/* Form Styles */
+.testForm {
+  margin: 20px;
+}
+
+.testForm input {
+  padding: 10px;
+  margin: 10px 0;
+  display: block;
+  width: 100%;
+}
+
+.highlightField {
+  outline: 2px solid red;
+}
+
+/* CTA Button */
+.cta-button {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .navMenu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}

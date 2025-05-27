@@ -1,0 +1,8 @@
+/scss
+  ├── custom.scss
+  └── bootstrap/
+      └── _variables.scss
+
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/bootstrap";

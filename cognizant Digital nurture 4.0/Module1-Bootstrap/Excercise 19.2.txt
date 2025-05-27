@@ -1,0 +1,6 @@
+$primary: #e83e8c;
+$border-radius: 1rem;
+
+@import "bootstrap";
+
+

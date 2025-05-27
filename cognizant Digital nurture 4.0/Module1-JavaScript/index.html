@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Community Event Portal</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    #event-container div {
+      border: 1px solid #ddd;
+      padding: 8px;
+      margin-bottom: 5px;
+      border-radius: 4px;
+    }
+    .event-card { display: none; margin: 5px 0; }
+  </style>
+</head>
+<body>
+  <h1>Community Events</h1>
+
+  <div id="event-container"></div>
+
+  <button id="registerBtn">Register</button>
+
+  <select id="categoryFilter">
+    <option value="">All Categories</option>
+    <option value="music">Music</option>
+    <option value="food">Food</option>
+    <option value="art">Art</option>
+    <option value="health">Health</option>
+  </select>
+
+  <form id="registrationForm">
+    <input name="name" placeholder="Your Name" />
+    <input name="email" placeholder="Your Email" type="email" />
+    <select name="event">
+      <option value="Music Festival">Music Festival</option>
+      <option value="Yoga Class">Yoga Class</option>
+      <option value="Art Workshop">Art Workshop</option>
+      <option value="Coding Bootcamp">Coding Bootcamp</option>
+      <option value="Baking Workshop">Baking Workshop</option>
+      <option value="Jazz Night">Jazz Night</option>
+    </select>
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- jQuery CDN for your jQuery code -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Your JS file -->
+  <script src="app.js"></script>
+</body>
+</html>

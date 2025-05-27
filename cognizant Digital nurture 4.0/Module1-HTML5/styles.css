@@ -1,0 +1,137 @@
+/* Global styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background-color: #f5f7fa;
+  color: #222;
+}
+
+h2 {
+  color: #333;
+  margin-top: 40px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Navigation */
+nav {
+  background-color: #222;
+  padding: 15px 20px;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #00bcd4;
+}
+
+/* Welcome Banner */
+#welcomeBanner {
+  background-color: #d2f1ff;
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Highlight styling */
+.highlight {
+  color: green;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Event Gallery */
+table {
+  margin: auto;
+  border-collapse: collapse;
+}
+
+.event-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.event-img:hover {
+  transform: scale(1.05);
+}
+
+td {
+  padding: 10px;
+  width: 33%;
+}
+
+/* Form Styling */
+form {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+input, select, textarea, button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 50px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  td {
+    display: block;
+    width: 100%;
+  }
+
+  .event-img {
+    width: 100%;
+  }
+}
